@@ -121,6 +121,7 @@ gulp.task('server:start', function() {
     notify: true,
     server: {
       baseDir: './build',
+      index: "index.htm",
       middleware: [
           modRewrite(['^[^\\.]*$ /index.html [L]'])
         ]
